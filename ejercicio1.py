@@ -7,7 +7,7 @@ def largo_numero(n):
         elif n >=0:
             for i in str(n):
                 contador += 1
-            print(contador)
+            print(f'El largo del número es de: {contador} caracteres')
     elif isinstance(n, str):
         print('El valor tiene que ser integral')
 largo_numero(1234)
