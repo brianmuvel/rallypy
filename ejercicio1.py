@@ -13,15 +13,15 @@
 # largo_numero(1234)
 
 
-def largo_numero(n):
+def largo_numero(numero):
     contador=0
-    if isinstance(n, str):
-        print('El valor tiene que ser integral')
-    elif n < -1:
-        print('El valor tiene que ser positivo')  
+    if isinstance(numero, str):
+        return None , 'El valor tiene que ser integral'
+    elif numero < -1:
+        return None, 'El valor tiene que ser positivo'
     else:
-        for i in str(n):
+        for i in str(numero):
             contador += 1
-        print(f'El largo del número es de: {contador}')
+        return 'El largo del numero es:', contador
 
-largo_numero('asd')
+largo_numero('100000000')
