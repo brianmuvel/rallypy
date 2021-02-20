@@ -17,7 +17,7 @@ def largo_numero(numero):
     contador=0
     if isinstance(numero, str) or isinstance(numero, bool):
         return None , 'El valor tiene que ser un entero'
-    elif numero < -1:
+    elif numero <= -1:
         return None, 'El valor tiene que ser positivo'
     for i in str(numero):
         contador += 1
